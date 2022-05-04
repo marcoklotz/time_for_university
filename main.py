@@ -1,8 +1,5 @@
-def main():
-    ects_sum = (input('How many ECTS do you want to gain this semester? ')
-    int time_per_ects = 30 #amount of hours per ECTS
-    int weeks_per_semester = 13
-
+def time_for_university():
+    ects_sum = int(input('How many ECTS do you want to gain this semester? '))
     for i in range(0, ects_sum):
         if ects_sum < 30:
             print('This degree might take you longer than planed! ')
@@ -11,6 +8,9 @@ def main():
         else:
             print('Very good! ')
 
+def total_hours_per_week():
+    time_per_ects = 30  # amount of hours per ECTS
+    weeks_per_semester = 13
     total_time_spent = float
     total_time_spent = (ects_sum * time_per_ects)/weeks_per_semester
 
