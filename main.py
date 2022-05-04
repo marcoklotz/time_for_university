@@ -1,6 +1,6 @@
 def main():
     ects_sum = int(input('How many ECTS do you want to gain this semester? '))
-    time_per_ects = 30
+    time_per_ects = 30 #amount of hours per ECTS
     weeks_per_semester = 13
 
     for i in range(0, ects_sum):
